@@ -2,7 +2,45 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+.header-grid, .footer-grid{
+  grid-area: header;
+  color: white;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  
+}
 
+.footer-grid{
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex-img-header{
+flex: 1;
+padding: 20px;
+}
+#student-icon{
+  padding: 2px;
+  width: 200px;
+}
+.flex-text-header{
+flex: 2;
+text-align: center;
+  }
+.nav-colum-links
+{background-color: darkblue;
+flex-direction: column;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+.nav-link{
+  padding: 2px;
+  color: white;
+}
 a {
   color: #00B7FF;
 }
+
