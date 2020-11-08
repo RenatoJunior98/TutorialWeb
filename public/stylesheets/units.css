@@ -1,0 +1,27 @@
+.flex-title-header{
+    font-size: 25px;
+}
+#unit-table{
+    border-collapse: separate;
+    padding: 15px;
+    width: 100%;
+    
+}
+
+  #unit-table tr:nth-child(even){
+      background-color: #f2f2f2;
+}
+
+#unit-table tr:hover {background-color: #ddd;}
+
+#unit-table td {
+    padding: 12px;
+}
+
+#unit-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: orangered;
+  color: white;
+}
