@@ -1,35 +1,49 @@
+h1 {
+  font-size: 2em;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-.header-grid, .footer-grid{
-  grid-area: header;
+.body-grid{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 20% auto 20%;
+  grid-template-areas:
+      'h h h'
+      'n m a'
+      'f f f';
+}
+.header-grid{
+  grid-area: h;
   color: white;
   background-color: blue;
   display: flex;
   align-items: center;
   
 }
-
-.footer-grid{
-  padding-left: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.main-grid{
+  grid-area: m;
+  color: #333333;
 }
+
 .flex-img-header{
 flex: 1;
-padding: 20px;
+padding-top: 20px;
+padding-left: 20px;
+padding-bottom: 20px;
 }
 #student-icon{
   padding: 2px;
   width: 200px;
 }
-.flex-text-header{
-flex: 2;
+.flex-title-header{
+flex: 8;
 text-align: center;
-  }
-.nav-colum-links
-{background-color: darkblue;
+}
+.nav-grid{
+  grid-area: n;
+  background-color: darkblue;
 flex-direction: column;
 padding: 10px;
 margin-top: 10px;
@@ -39,6 +53,34 @@ margin-right: 10px;
 .nav-link{
   padding: 2px;
   color: white;
+}
+.aside-grid{
+  grid-area: a;
+border-style: solid;
+border-color: darkblue;
+color: darkblue;
+flex-direction: column;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 0px;
+margin-left: 10px;
+}
+
+.aside-link{
+  padding: 2px;
+  color: darkblue;
+}
+.footer-grid{
+  grid-area: f;
+}
+.footer-section{
+  color: white;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 100px;
 }
 a {
   color: #00B7FF;
